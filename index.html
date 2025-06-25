@@ -1,55 +1,83 @@
 <!DOCTYPE html>
-
 <html lang="es">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>LM Divine Beauty</title>
-<link href="estilos.css" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&amp;display=swap" rel="stylesheet"/>
-<script async="" src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
-<style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>LM Divine Beauty</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+  <style>
     html {
       scroll-behavior: smooth;
     }
     body {
       font-family: "Dancing Script", cursive;
     }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    nav ul {
+      flex-wrap: wrap;
+    }
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+      }
+      nav a {
+        font-size: 1rem;
+      }
+      h2 {
+        font-size: 1.8rem;
+      }
+      body {
+        font-size: 16px;
+      }
+    }
   </style>
 </head>
 <body>
-<header><img alt="LM Divine Beauty Logo" class="logo" src="img/lm_divine_beauty_logo.png"/>
-<h1>LM Divine Beauty</h1>
-<nav>
-<ul>
-<li><a href="#inicio">Inicio</a></li>
-<li><a href="#servicios">Servicios</a></li>
-<li><a href="#contacto">Contáctame</a></li>
-</ul>
-</nav>
+<header>
+  <img src="img/lm_divine_beauty_logo.png" alt="LM Divine Beauty Logo" class="logo">
+  <h1>LM Divine Beauty</h1>
+  <nav>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#contacto">Contáctame</a></li>
+    </ul>
+  </nav>
 </header>
-<main>
-<section id="inicio">
-<h2>Bienvenida</h2>
-<p>Gracias por visitar LM Divine Beauty. Transformamos tu estilo y resaltamos tu belleza interior con pasion y profesionalismo.</p>
-</section>
 
-<section id="servicios">
-<h2>Servicios</h2>
-<ul>
-<li>Corte y peinado</li>
-<li>Coloración personalizada</li>
-<li>Tratamientos capilares</li>
-<li>Entre Otros Mas</li>
-</ul>
-</section>
-<section id="contacto">
-<h2>Contáctame</h2>
-<!-- Calendly Embed -->
-<div id="calendly-embed" style="min-width:320px;height:700px;"></div>
-<script>
+<main>
+  <section id="inicio">
+    <h2>Bienvenida</h2>
+    <p>Gracias por visitar LM Divine Beauty. Transformamos tu estilo y resaltamos tu belleza interior con pasion y profesionalismo.</p>
+  </section>
+
+  <section id="servicios">
+    <h2>Servicios</h2>
+    <ul>
+      <li>Corte y peinado</li>
+      <li>Coloración personalizada</li>
+      <li>Tratamientos capilares</li>
+    </ul>
+  </section>
+
+  <section id="contacto">
+    <h2>Contáctame</h2>
+
+    <!-- Calendly Embed -->
+    <div style="min-width:320px;height:700px;" id="calendly-embed"></div>
+    <script>
       window.onload = function () {
         Calendly.initInlineWidget({
           url: 'https://calendly.com/beutydivine01',
@@ -59,15 +87,17 @@
         });
       }
     </script>
-<!-- Información de contacto -->
-<div class="contacto-info">
-<h3>Teléfono</h3>
-<p><strong>📞:</strong> <a href="tel:9042287034">904-228-7034</a></p>
-</div>
-</section>
+
+    <!-- Información de contacto -->
+    <div class="contacto-info">
+      <h3>Teléfono</h3>
+      <p><strong>📞:</strong> <a href="tel:9042287034">904-228-7034</a></p>
+    </div>
+  </section>
 </main>
+
 <footer>
-<p>© 2025 LM Divine Beauty. Todos los derechos reservados.</p>
+  <p>&copy; 2025 LM Divine Beauty. Todos los derechos reservados.</p>
 </footer>
 </body>
 </html>
