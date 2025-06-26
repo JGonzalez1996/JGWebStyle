@@ -8,7 +8,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
-  <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
   <style>
     html {
       scroll-behavior: smooth;
@@ -42,6 +41,25 @@
         font-size: 16px;
       }
     }
+
+    /* Estilo del botón Goldie */
+    .boton-reserva {
+      background-color: #f7b731;
+      color: white;
+      padding: 14px 28px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: bold;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    .boton-reserva:hover {
+      background-color: #e0a800;
+    }
   </style>
 </head>
 <body>
@@ -60,15 +78,15 @@
 <main>
   <section id="inicio">
     <h2>Bienvenida</h2>
-    <p>Gracias por visitar LM Divine Beauty. Transformamos tu estilo y resaltamos tu belleza interior con pasion y profesionalismo.</p>
+    <p>Gracias por visitar LM Divine Beauty. Transformamos tu estilo y resaltamos tu belleza interior con pasión y profesionalismo.</p>
   </section>
 
   <section id="servicios">
     <h2>Servicios</h2>
     <ul>
       <li>Diseños de cejas con Henna</li>
-      <li>Alisado de cabellos sin formol(Keratina)</li>
-      <li>Hidrataciones Profundas </li>
+      <li>Alisado de cabellos sin formol (Keratina)</li>
+      <li>Hidrataciones Profundas</li>
       <li>Lavado, Planchado y Secado de Cabello con cortes de puntas</li>
     </ul>
   </section>
@@ -76,18 +94,12 @@
   <section id="contacto">
     <h2>Contáctame</h2>
 
-    <!-- Calendly Embed -->
-    <div style="min-width:320px;height:700px;" id="calendly-embed"></div>
-    <script>
-      window.onload = function () {
-        Calendly.initInlineWidget({
-          url: 'https://calendly.com/leyanismojena97',
-          parentElement: document.getElementById('calendly-embed'),
-          prefill: {},
-          utm: {}
-        });
-      }
-    </script>
+    <!-- Botón de reservas con Goldie -->
+    <div style="text-align: center;">
+      <a href="https://book.heygoldie.com/es/Divine-Beauty-28de063feab6" target="_blank" class="boton-reserva">
+        Reserva tu cita
+      </a>
+    </div>
 
     <!-- Información de contacto -->
     <div class="contacto-info">
